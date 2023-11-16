@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    padding: 2rem;
+}
+
+.container, .grande, .mediana, .chica {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.order {
+    align-self: flex-end;
+}
+
+.grande {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.mediana {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.chica {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+}
+
